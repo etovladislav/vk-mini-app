@@ -49,7 +49,7 @@ class App extends React.Component {
             last_name: this.state.fetchedUser.first_name,
             photo: this.state.fetchedUser.photo_100 || null
         };
-        fetch('https://demo18.alpha.vkhackathon.com/client', {
+        fetch('https://demo18.alpha.vkhackathon.com:8080/client', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -61,7 +61,7 @@ class App extends React.Component {
     }
 
     async getTest() {
-        fetch("https://demo18.alpha.vkhackathon.com/test/1")
+        fetch("https://demo18.alpha.vkhackathon.com:8080/test/1")
             .then(res => res.json())
             .then(
                 (result) => {
