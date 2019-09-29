@@ -79,7 +79,7 @@ class Quiz extends React.Component {
             };
         this.setState({answerIds: [...this.state.answerIds, this.state.selectedAnswerId]})
 
-        fetch('https://demo18.alpha.vkhackathon.com:8080/answer', {
+        fetch('https://demo18.alpha.vkhackathon.com/answer', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
@@ -130,7 +130,7 @@ class Quiz extends React.Component {
                         <Progress value={this.state.questionIndex / this.props.questions.length * 100}/>
                     </InfoRow>
                     <Separator style={{margin: '12px 0'}}/>
-                    <img src={'https://demo18.alpha.vkhackathon.com:8080/storage/' + currentQuestion.img}
+                    <img src={'https://demo18.alpha.vkhackathon.com/storage/' + currentQuestion.img}
                          style={{width: '100%'}} alt=""/>
                     <FormLayout>
                         <div>

@@ -53,7 +53,7 @@ class Congrats extends React.Component {
                     <Div>
                         <h1>{this.props.congr.message.result.text}</h1>
                         <Separator style={{margin: '12px 0'}}/>
-                        <img src={'https://demo18.alpha.vkhackathon.com:8080/storage/' + this.props.congr.message.result.img}
+                        <img src={'https://demo18.alpha.vkhackathon.com/storage/' + this.props.congr.message.result.img}
                              style={{width: '100%'}} alt=""/>
                     </Div>
                 </Group>
@@ -61,7 +61,7 @@ class Congrats extends React.Component {
                     <Div>
                         <h1>{this.props.congr.message.products.name}</h1>
                         <p>{this.props.congr.message.products.desc}</p>
-                        <img src={'https://demo18.alpha.vkhackathon.com:8080/storage/' + this.state.result.result.img}
+                        <img src={'https://demo18.alpha.vkhackathon.com/storage/' + this.state.result.result.img}
                              style={{width: '100%'}} alt=""/>
                         <br/>
                         <br/>

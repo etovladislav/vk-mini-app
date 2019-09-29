@@ -38,7 +38,7 @@ class Home extends React.Component {
                         <p style={{lineHeight: '1.5'}}>
                             {this.props.test.desc}
                         </p>
-                        <img src={'https://demo18.alpha.vkhackathon.com:8080/storage/' + this.props.test.img}
+                        <img src={'https://demo18.alpha.vkhackathon.com/storage/' + this.props.test.img}
                              style={{width: '100%'}} alt=""/>
                         <Div>
                             <Button size="xl" level="secondary"
